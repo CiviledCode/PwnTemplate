@@ -33,6 +33,7 @@ class pwnio:
                     attachr2(self.io, script)
                 elif self.debugger == "gdb":
                     gdb.attach(self.io, script)
+                input("Press Enter to continue...")
             else:
                 print("Not attaching debugger on remote...")
 
